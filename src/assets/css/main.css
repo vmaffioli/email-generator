@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  display: grid; 
+  grid-template-columns: 80% 20%; 
+  grid-template-rows: 10% 90%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "cabecalho cabecalho"
+    "janela selecionaveis"; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho {
+  grid-area: cabecalho;
+  background-color: #E00000;
+  text-align: center;
+}
+
+.cabecalho p {
+  color: white;
+  font-size: 36px;
+
+}
+
+.selecionaveis {
+  grid-area: selecionaveis;
+  background-color: #BCBCBC;
+  text-align: center;
+}
+
+.janela {
+  grid-area: janela;
+  background-color: #FFFFFF;
+
+}
